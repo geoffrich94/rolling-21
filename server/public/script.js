@@ -1,4 +1,4 @@
-const socket = new WebSocket("wss://YOUR-BACKEND-URL");
+const socket = new WebSocket("wss://rolling-21.onrender.com");
 let myPlayerIndex = null;
 
 socket.onmessage = (event) => {
