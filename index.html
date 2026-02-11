@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="assets/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Rolling 21</title>
+  </head>
+
+  <body>
+    <section class="startscreen">
+      <div class="startscreen__content">
+        <img src="assets/logo.jpg" />
+        <button class="btn">Start Game</button>
+      </div>
+    </section>
+
+    <section class="main hidden">
+      <div class="player player--0 player--active">
+        <span class="you-tag hidden" id="you--0">YOU</span>
+        <h2 class="player__name" id="name--0">Player 1</h2>
+        <p class="player__score-label">Current Score</p>
+        <p class="player__score" id="score--0">6</p>
+        <div class="rounds-won">
+          <p class="rounds-won__label">Rounds Won</p>
+          <p class="rounds-won__score" id="round--0">0</p>
+        </div>
+      </div>
+
+      <div class="player player--1">
+        <span class="you-tag hidden" id="you--1">YOU</span>
+        <h2 class="player__name" id="name--1">Player 2</h2>
+        <p class="player__score-label">Current Score</p>
+        <p class="player__score" id="score--1">4</p>
+        <div class="rounds-won">
+          <p class="rounds-won__label">Rounds Won</p>
+          <p class="rounds-won__score" id="round--1">0</p>
+        </div>
+      </div>
+
+      <div class="centre">
+        <div class="dice-wrapper">
+          <div id="die" class="die">
+            <div id="side-one" class="side one">
+              <div class="dot one-1"></div>
+            </div>
+            <div id="side-two" class="side two">
+              <div class="dot two-1"></div>
+              <div class="dot two-2"></div>
+            </div>
+            <div id="side-three" class="side three">
+              <div class="dot three-1"></div>
+              <div class="dot three-2"></div>
+              <div class="dot three-3"></div>
+            </div>
+            <div id="side-four" class="side four">
+              <div class="dot four-1"></div>
+              <div class="dot four-2"></div>
+              <div class="dot four-3"></div>
+              <div class="dot four-4"></div>
+            </div>
+            <div id="side-five" class="side five">
+              <div class="dot five-1"></div>
+              <div class="dot five-2"></div>
+              <div class="dot five-3"></div>
+              <div class="dot five-4"></div>
+              <div class="dot five-5"></div>
+            </div>
+            <div id="side-six" class="side six">
+              <div class="dot six-1"></div>
+              <div class="dot six-2"></div>
+              <div class="dot six-3"></div>
+              <div class="dot six-4"></div>
+              <div class="dot six-5"></div>
+              <div class="dot six-6"></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn--roll">Roll dice 🎲</button>
+        <button class="btn btn--stand">
+          Stand <i class="fa-solid fa-hand"></i>
+        </button>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/77b69a94e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
